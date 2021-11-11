@@ -1,0 +1,41 @@
+#include <iostream> 
+using namespace std;
+int n;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите целое число" << endl;
+	cin >>n; 
+	if (n > 0)
+	{
+		if (n % 2 == 0)
+		{
+			cout << "Положительное четное число";
+		}
+		else
+		{
+			cout << "Положительное нечетное число";
+		}
+	}
+	else
+	{
+		if (n == 0)
+		{
+			cout << "Нулевое число";
+		}
+		else
+		{
+			if (n % 2 == 0)
+			{
+				cout << "Отрицательное четное число";
+			}
+			else
+			{
+				cout << "Отрицательное нечетное число";
+			}
+		}
+	}
+
+	
+	return 0;
+}

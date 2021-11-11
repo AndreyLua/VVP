@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int a,b,c;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Ââåäèòå 3 ñòîðîíû òðåóãîëüíèêà" << endl;
+	cin >> a >> b >> c ;
+	if ( (a+b)>c && (c + b) > a && (c + a) > b  )
+	{
+		if ( (c*c) == (a*a+b*b) || (a * a) == (c * c + b * b) || (b * b) == (a * a + c * c) )
+		{
+			cout << "Треугольник со сторонами a, b, c является прямоугольным" << endl;
+		}
+		else
+		{
+			cout << "Треугольник со сторонами a, b, c не является прямоугольным" << endl;
+		}
+	}
+	else
+	{
+		cout << "Треугольник со сторонами a, b, c не существует" << endl;
+	}
+	
+	return 0;
+}

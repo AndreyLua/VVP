@@ -1,0 +1,19 @@
+#include <iostream> 
+using namespace std;
+int a, b,c,s1,s2; 
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите значение точек на плоскости A и B и С"<< endl;
+	cin >> a >> b >> c; 
+	if (abs(a - b) < abs(a - c))
+	{
+		cout << "Tочка B ближе к точке A (" << b << ") Расстояние до точки A равно " << abs(a - b);
+	}
+	else
+	{
+		cout << "Tочка C ближе к точке A (" << c << ") Расстояние до точки A равно " << abs(a - c);
+	}
+
+	return 0;
+}

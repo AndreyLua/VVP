@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int a,b,c;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите три целых числа A, B и C" << endl;
+	cin >> a >> b>> c;
+	if (a<b<c) {
+		cout << "Неравенство справедливо (a < b < c )" << endl;
+	}
+	else
+	{
+		cout << "Неравенство несправедливо (a < b < c )" << endl;
+	}
+	return 0;
+}

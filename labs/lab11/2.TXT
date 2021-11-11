@@ -1,0 +1,47 @@
+#include <iostream> 
+using namespace std;
+int a, b,c,s1,s2; 
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите три целых числа A и B и С"<< endl;
+	cin >> a >> b >> c; 
+	cout << "Сумма двух наибольших из них:" << endl;
+	if (a >= b && a >= c)
+	{
+		if (b >= c) {
+			cout <<a + b;
+		}
+		else
+		{
+			cout << a + c;
+		}
+	}
+	else
+	{
+		if (b >= a && b >= c)
+		{
+			if (a >= c)
+			{
+				cout << a + b;
+			}
+			else
+			{
+				cout << c + b;
+			}
+		}
+		else
+		{
+			if (a >= b)
+			{
+				cout << a + c;
+			}
+			else
+			{
+				cout << c + b;
+			}
+		}
+	}
+
+	return 0;
+}

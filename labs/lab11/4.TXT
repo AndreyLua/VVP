@@ -1,0 +1,39 @@
+#include <iostream> 
+using namespace std;
+int x, y;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите координаты точки " << endl;
+	cin >> x >> y; 
+	if (x != 0 || y != 0)
+	{
+		if (x > 0 && y > 0)
+		{
+			cout << "Точка пренадлежит 1 четверти";
+		}
+		else
+		{
+			if (x < 0 && y > 0)
+			{
+				cout << "Точка пренадлежит 2 четверти";
+			}
+			else
+			{
+				if (x < 0 && y < 0)
+				{
+					cout << "Точка пренадлежит 3 четверти";
+				}
+				else
+				{
+					cout << "Точка пренадлежит 4 четверти";
+				}
+			}
+		}
+	}
+	else
+	{
+		cout << "Точка лежит на координатных осях";
+	}
+	return 0;
+}
