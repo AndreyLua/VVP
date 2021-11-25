@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int k =1;
+float s =1000,p;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите проценты вклада " << endl;
+    cin >> p;
+    while (s <= 1100) {
+        k = k+1;
+        s =s + s * p / 100;
+    }
+    cout << "Количество месяцев " << k << endl << "размер вклада " << s;
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int n, k = 0, d = 0;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите целое число n" << endl;
+	cin >> n; 
+	while (k < n)
+	{
+		d = d + 1;
+		k = k + d;
+	}
+	cout << "число " << d << " сумма до этого числа " << k;
+
+	return 0;
+}

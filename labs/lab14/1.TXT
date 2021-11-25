@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int a,b;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите целое число a и целое число b" << endl;
+	cin >> a >> b; 
+	for (int i = a; i <= b; i++)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			cout << i << endl;
+		}
+
+	}
+
+
+	return 0;
+}

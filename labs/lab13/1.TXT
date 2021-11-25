@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+double n;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите цену за 1 кг конфет" << endl;
+	cin >> n; 
+	for (int i = 1; i <= 10; i++)
+	{
+		cout << "Цена за " << (double(i) / 10) << " кг  = " << (double(i) / 10)*n << endl;
+	}
+
+	return 0;
+}

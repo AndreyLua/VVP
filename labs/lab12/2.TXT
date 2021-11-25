@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int m,n; 
+char ch; 
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите направление робота и его движение" << endl;
+	cin >> ch >> m; 
+	if (int(ch) == -111)
+	{
+		n = 1; 
+	}
+	if (int(ch) == -121)
+	{
+		n = 2;
+	}
+	if (int(ch) == -98)
+	{
+		n = 3;
+	}
+	if (int(ch) == -126)
+	{
+		n = 4;
+	}
+	n = n + m; 
+	if (n == 0)
+	{
+		n = 4;
+	}
+	if (n == 5)
+	{
+		n = 1;
+	}
+	
+	if (n == 1) {
+		cout << "С";
+	}
+	if (n == 2) {
+		cout << "З";
+	}
+	if (n == 3) {
+		cout << "Ю";
+	}
+	if (n == 4) {
+		cout << "В";
+	}
+	return 0;
+}
