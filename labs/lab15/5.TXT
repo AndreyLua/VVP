@@ -1,0 +1,39 @@
+#include <iostream>  
+using namespace std;
+int a; 
+double Fact2(int n)
+{
+    if (n % 2 == 0)
+    {
+        int s = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            if (i % 2 == 0) {
+                s = s * i;
+            }
+        }
+        return s;
+    }
+    else
+    {
+        int s = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            if (i % 2 == 1) {
+                s = s * i;
+            }
+        }
+        return s;
+    }
+}
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите N" << endl;
+    cin >> a;
+    cout << "!!N = " << endl;
+    cout << Fact2(a);
+   
+    return 0;
+}

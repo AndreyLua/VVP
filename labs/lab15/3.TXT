@@ -1,0 +1,26 @@
+#include <iostream>  
+using namespace std;
+double a,b; 
+double RingS(double R1, double R2)
+{
+    return (3.14*R1*R1)- (3.14 * R2 * R2);
+}
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите R1 и R2" << endl;
+    cin >> a >> b;
+    cout << "Площадь внутреннего кольца = " << endl;
+    cout << RingS(a, b) << endl;
+    cout << "Введите R1 и R2" << endl;
+    cin >> a >> b;
+    cout << "Площадь внутреннего кольца = " << endl;
+    cout << RingS(a, b) << endl;
+    cout << "Введите R1 и R2" << endl;
+    cin >> a >> b;
+    cout << "Площадь внутреннего кольца = " << endl;
+    cout << RingS(a, b) << endl;
+
+    
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>  
+using namespace std;
+double a,b; 
+int Sign(double x)
+{
+    if (x < 0)
+    {
+        return -1;
+    }
+    if (x == 0 )
+    {
+        return 0;
+    }
+    if (x > 0)
+    {
+        return 1;
+    }
+}
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите A и B" << endl;
+    cin >> a >> b;
+    cout << "Результат функции  Sign(A) + Sign(B) = " << endl;
+    cout << Sign(a) + Sign(b) << endl;
+    
+    return 0;
+}
